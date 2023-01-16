@@ -1,0 +1,57 @@
+<form class="bg-white shadow-md rounded px-8 pt-8 pb-8 mb-6 mt-6" action="/submit" method="POST"
+enctype="multipart/form-data" id="my-form">
+<div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+        Name
+    </label>
+    <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="name" type="text" name="name" placeholder="Name">
+</div>
+<div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="bio">
+        Bio
+    </label>
+    <textarea
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="bio" name="bio" placeholder="Bio"></textarea>
+</div>
+
+    <input type="file" class="hidden" multiple />
+
+
+</div>
+<div class="flex items-center justify-between mt-6">
+    <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline"
+        type="submit">
+        Submit
+    </button>
+</div>
+</form>
+
+
+<form id="upload-form" class="dropzone">
+    <!-- this is were the previews should be shown. -->
+    <div class="previews"></div>
+
+    <!-- Now setup your input fields -->
+    <input type="email" name="username" />
+    <input type="password" name="password" />
+
+    <div class="hover:bg-sky-700 relative h-64 border border-gray-400 rounded-lg overflow-hidden dropzone"
+    id="my-dropzone">
+        <div class="absolute inset-0 bg-gray-200 bg-opacity-50"></div>
+        <div class="flex items-center justify-center text-gray-500 text-5xl font-bold h-full w-full">
+        +
+        </div>
+    </div>
+
+    <button type="submit">Submit data and files!</button>
+</form>
+
+
+
+
+
+
